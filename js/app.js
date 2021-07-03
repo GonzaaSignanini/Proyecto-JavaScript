@@ -48,23 +48,6 @@ function clickCotizar(e) {
 }
 
 
-
-// if (autoSeleccionado == undefined){
-//     const parrafoDos = document.createElement('p');
-//     parrafoDos.textContent = ('No podemos asegurar tu auto'); 
-//     parrafoDos.innerHTML = ('No podemos asegurar tu auto');
-//     const cotizador = document.querySelector('.cotizador');
-//     cotizador.insertBefore(parrafoDos, document.querySelector('cotizador h1'));
-// }else{
-//     console.log(autoSeleccionado);
-//     const parrafo = document.createElement('p');
-//     parrafo.textContent = (`El seguro de tu vehículo ${autoSeleccionado.marca} ${autoSeleccionado.modelo} cuesta $${autoSeleccionado.precio} pesos argentinos.`);
-//     parrafo.innerHTML = (`El seguro de tu vehículo ${autoSeleccionado.marca} ${autoSeleccionado.modelo} cuesta $${autoSeleccionado.precio} pesos argentinos.`)
-//     const cotizador = document.querySelector('.cotizador');
-//     cotizador.insertBefore(parrafo, document.querySelector('cotizador h1'));
-// }
-
-
 const inputNombre = document.querySelector('#nombre');
 const inputApellido = document.querySelector('#apellido');
 const inputEmail = document.querySelector('#email');
