@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Cotiza tu vehículo - Online</title>
+        
+</head>
+<body>
+    
+    <header>
+        
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html"><strong>COTIZÁ</strong><br>EN TU CASA</a>
+                <a href="index.html"><img src="imagenes/logo.png" alt="Imagen Logo"></a>
+            </div>
+            <ul class="lista">
+                <li class="lista__item">
+                    <a href="#cotizador">Inicio</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#referencias">Referencias</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="cotizador" id="cotizador">
+        <h1 class="titCotizador">TU SEGURO DE CONFIANZA</h1>
+        <div class="inputs">
+            <label for="marca">Marca:</label>
+            <br>
+            <input type="text" class="marca-auto" name="marca">
+        </div>
+        <div class="inputDos">
+            <label for="modelo">Modelo:</label>
+            <br>
+            <input type="text" class="modelo-auto" name="modelo">
+        
+            <button type="submit" class="btn-cotizador">COTIZAR</button>
+        </div>
+    </div>
+
+    <section class="contenido-nosotros">
+        <div id="nosotros">
+            <h1 class="titNosotros">Sobre Nosotros</h1>
+            <p class="textoNos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eligendi aut exercitationem velit! Ullam aspernatur suscipit nihil fuga impedit totam, voluptatibus numquam minima at id. Iste consequuntur facilis voluptatem repellendus.</p>
+
+            <h3 class="subtNosotros">¿Quienes Somos?</h3>
+            <p class="textoNos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero ipsum nemo. Voluptatem odio voluptatibus excepturi, illo tempora, voluptate similique tempore corporis saepe maxime id deleniti quasi quo cupiditate! Laudantium.</p>
+            
+            <h3 class="subtNosotros">Misión y Visión</h3>
+            <p class="textoNos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo similique eum non, autem eaque tempora reprehenderit quibusdam eligendi iure corporis ab architecto natus fugit sequi est? Laboriosam, facilis. Veniam?</p>
+        </div>
+    </section>
+
+    <section class="contenido-referencias">
+
+        <div id="referencias">
+            <!-- EN ESTA SECCION VOY A PONER UN CARROUSEL CON "TESTIMONIOS" DE LAS PERSONAS QUE COTICEN SU SEGURO ACA -->
+        </div>
+
+    </section>
+
+    <div class="contacto" id="contacto">
+        <h1 class="titContacto">Contacto</h1>
+        <img src="imagenes/img-form.svg" alt="">
+        <form action="#" id="form-principal" class="formContacto">
+            <label for="nombre"><span>N</span>ombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" autocomplete="off">
+            <label for="apellido"><span>A</span>pellido</label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido"  autocomplete="off">
+            <label for="text"><span>E</span>mail</label>
+            <input type="email" id="email" placeholder="Ingrese su email" autocomplete="off">
+            <label for="msj"><span>M</span>ensaje</label>
+            <textarea name="msj" id="msj" cols="50" rows="10" placeholder="Ingrese su consulta"></textarea>
+            <button type="submit" class="boton">Enviar Mensaje</button>
+            <div id="validator"></div>
+        </form>
+    </div>
+
+
+
+    <footer>
+        <p class="textoFooter">Powered by Gonzalo Signanini</p>
+
+    </footer>
+
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
