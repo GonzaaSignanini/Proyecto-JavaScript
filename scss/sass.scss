@@ -206,14 +206,39 @@ footer{
 .inputs{
 
     label{
-        color: white;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+    }
+
+    input{
+        height: 38px;
+    }
+
+    ::placeholder{
+        text-align: center;
     }
 }
+    
+
 
 .inputDos{
-
+    margin-left: 1%;
+    
     label{
-        color: white;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+    }
+
+    input{
+        height: 38px;
+    }
+
+    button{
+        margin-bottom: 1.2%;
+    }
+
+    ::placeholder{
+        text-align: center;
     }
 }
 
@@ -235,6 +260,8 @@ footer{
         color: rgb(32, 28, 92);
         font-size: 45px;
         width: 100%;
+        margin-left: 1%;
+        margin-top: -2%;
     }
 
     p{
@@ -243,11 +270,14 @@ footer{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
         width: 100%;
+        font-weight: 500;
         text-align: center;
     }
 
     .seguro{
         width: 100%;
     }
+
+    
 }
 

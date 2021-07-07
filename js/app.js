@@ -15,13 +15,11 @@ const seguro3 = new Seguro("Chevrolet", "Cruze", 13000);
 const seguro4 = new Seguro("Ford", "Focus", 12300);
 
 const seguroAutos = [seguro1, seguro2, seguro3, seguro4];
-
 const marcaAuto = document.querySelector('.marca-auto');
 const modeloAuto = document.querySelector('.modelo-auto');
 const botonCotizador = document.querySelector('button.btn-cotizador');
-
 botonCotizador.addEventListener('click', clickCotizar);
-
+let contador = 0;
 localStorage.setItem('seguroAutos', JSON.stringify(seguroAutos));
 const seguroTotal = JSON.parse(localStorage.getItem('seguroAutos'));
 
@@ -40,10 +38,16 @@ function clickCotizar(e) {
     }else{
         const parrafo = document.createElement('p');
         parrafo.setAttribute('class', 'seguro');
-        parrafo.textContent = (`El seguro de tu vehículo ${autoSeleccionado.marca} ${autoSeleccionado.modelo} cuesta $${autoSeleccionado.precio} pesos argentinos.`);
+        parrafo.textContent = (`El seguro de tu vehículo ${autoSeleccionado.marca} ${autoSeleccionado.modelo} cuesta $${autoSeleccionado.precio} por mes.`);
         const cotizador = document.querySelector('.cotizador');
         cotizador.insertBefore(parrafo, document.querySelector('cotizador h1'));
     }
+
+    if(contador === 0){
+        console.log("contador = 1")
+        botonCotizador.disabled = true;
+    }
+    contador++;
 
 }
 
