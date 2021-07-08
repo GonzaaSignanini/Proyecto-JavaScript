@@ -18,7 +18,9 @@ const seguroAutos = [seguro1, seguro2, seguro3, seguro4];
 const marcaAuto = document.querySelector('.marca-auto');
 const modeloAuto = document.querySelector('.modelo-auto');
 const botonCotizador = document.querySelector('button.btn-cotizador');
-botonCotizador.addEventListener('click', clickCotizar);
+
+$('button.btn-cotizador').on('click', clickCotizar);
+
 let contador = 0;
 localStorage.setItem('seguroAutos', JSON.stringify(seguroAutos));
 const seguroTotal = JSON.parse(localStorage.getItem('seguroAutos'));
@@ -44,7 +46,6 @@ function clickCotizar(e) {
     }
 
     if(contador === 0){
-        console.log("contador = 1")
         botonCotizador.disabled = true;
     }
     contador++;
@@ -57,7 +58,7 @@ const inputApellido = document.querySelector('#apellido');
 const inputEmail = document.querySelector('#email');
 const inputMsj = document.querySelector('#msj');
 const boton = document.querySelector('button.boton');
-boton.addEventListener("click", clickSubmit);
+$('button.boton').on('click', clickSubmit);
 
 
 function clickSubmit(e){
