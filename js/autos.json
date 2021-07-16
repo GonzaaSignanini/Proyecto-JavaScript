@@ -1,0 +1,401 @@
+[{
+  "marca": "Chevrolet",
+  "modelo": "Silverado",
+  "precio": 9017
+}, {
+  "marca": "Mitsubishi",
+  "modelo": "Challenger",
+  "precio": 7505
+}, {
+  "marca": "Peugeot",
+  "modelo": "208",
+  "precio": 11739
+}, {
+  "marca": "Mercedes-Benz",
+  "modelo": "SLK-Class",
+  "precio": 5362
+}, {
+  "marca": "Toyota",
+  "modelo": "T100",
+  "precio": 9128
+}, {
+  "marca": "BMW",
+  "modelo": "5 Series",
+  "precio": 12538
+}, {
+  "marca": "Ford",
+  "modelo": "Focus",
+  "precio": 10509
+}, {
+  "marca": "BMW",
+  "modelo": "X6 M",
+  "precio": 4977
+}, {
+  "marca": "Daewoo",
+  "modelo": "Lanos",
+  "precio": 13949
+}, {
+  "marca": "Mercedes-Benz",
+  "modelo": "SLS-Class",
+  "precio": 6553
+}, {
+  "marca": "Chevrolet",
+  "modelo": "Malibu",
+  "precio": 15673
+}, {
+  "marca": "BMW",
+  "modelo": "525",
+  "precio": 14300
+}, {
+  "marca": "Toyota",
+  "modelo": "Avalon",
+  "precio": 7855
+}, {
+  "marca": "Chevrolet",
+  "modelo": "Corvette",
+  "precio": 14330
+}, {
+  "marca": "Ford",
+  "modelo": "E150",
+  "precio": 15018
+}, {
+  "marca": "Subaru",
+  "modelo": "Loyale",
+  "precio": 5025
+}, {
+  "marca": "Chevrolet",
+  "modelo": "Cruze",
+  "precio": 6500
+}, {
+  "marca": "Honda",
+  "modelo": "Accord",
+  "precio": 6421
+}, {
+  "marca": "Ford",
+  "modelo": "Thunderbird",
+  "precio": 6104
+}, {
+  "marca": "Saturn",
+  "modelo": "Ion",
+  "precio": 7672
+}, {
+  "marca": "Lexus",
+  "modelo": "GS",
+  "precio": 12665
+}, {
+  "marca": "Cadillac",
+  "modelo": "STS",
+  "precio": 17642
+}, {
+  "marca": "Toyota",
+  "modelo": "Avalon",
+  "precio": 5843
+}, {
+  "marca": "Alfa Romeo",
+  "modelo": "Spider",
+  "precio": 11421
+}, {
+  "marca": "Chrysler",
+  "modelo": "PT Cruiser",
+  "precio": 13485
+}, {
+  "marca": "Toyota",
+  "modelo": "FJ Cruiser",
+  "precio": 16043
+}, {
+  "marca": "Mercedes-Benz",
+  "modelo": "600SEL",
+  "precio": 14127
+}, {
+  "marca": "Pontiac",
+  "modelo": "6000",
+  "precio": 16951
+}, {
+  "marca": "Dodge",
+  "modelo": "Grand Caravan",
+  "precio": 12534
+}, {
+  "marca": "Suzuki",
+  "modelo": "SJ",
+  "precio": 15117
+}, {
+  "marca": "Chevrolet",
+  "modelo": "Silverado 3500",
+  "precio": 17149
+}, {
+  "marca": "GMC",
+  "modelo": "Vandura 2500",
+  "precio": 6820
+}, {
+  "marca": "Mitsubishi",
+  "modelo": "Expo",
+  "precio": 11369
+}, {
+  "marca": "Oldsmobile",
+  "modelo": "Bravada",
+  "precio": 8733
+}, {
+  "marca": "Bentley",
+  "modelo": "Brooklands",
+  "precio": 17064
+}, {
+  "marca": "Audi",
+  "modelo": "TT",
+  "precio": 6436
+}, {
+  "marca": "Ford",
+  "modelo": "Galaxie",
+  "precio": 10688
+}, {
+  "marca": "Mercedes-Benz",
+  "modelo": "R-Class",
+  "precio": 12095
+}, {
+  "marca": "Jaguar",
+  "modelo": "X-Type",
+  "precio": 12226
+}, {
+  "marca": "Toyota",
+  "modelo": "Land Cruiser",
+  "precio": 17789
+}, {
+  "marca": "Chevrolet",
+  "modelo": "Malibu",
+  "precio": 10412
+}, {
+  "marca": "Lotus",
+  "modelo": "Elan",
+  "precio": 17019
+}, {
+  "marca": "Pontiac",
+  "modelo": "Daewoo Kalos",
+  "precio": 4920
+}, {
+  "marca": "Kia",
+  "modelo": "Spectra",
+  "precio": 17842
+}, {
+  "marca": "Lincoln",
+  "modelo": "Mark VII",
+  "precio": 12644
+}, {
+  "marca": "Mitsubishi",
+  "modelo": "Raider",
+  "precio": 17595
+}, {
+  "marca": "Mazda",
+  "modelo": "RX-8",
+  "precio": 10324
+}, {
+  "marca": "Dodge",
+  "modelo": "Viper",
+  "precio": 9597
+}, {
+  "marca": "Pontiac",
+  "modelo": "Vibe",
+  "precio": 16000
+}, {
+  "marca": "Toyota",
+  "modelo": "Avalon",
+  "precio": 12862
+}, {
+  "marca": "Suzuki",
+  "modelo": "Grand Vitara",
+  "precio": 9275
+}, {
+  "marca": "GMC",
+  "modelo": "Jimmy",
+  "precio": 6752
+}, {
+  "marca": "Honda",
+  "modelo": "Accord",
+  "precio": 9516
+}, {
+  "marca": "Kia",
+  "modelo": "Rio",
+  "precio": 5366
+}, {
+  "marca": "Ford",
+  "modelo": "F350",
+  "precio": 6928
+}, {
+  "marca": "BMW",
+  "modelo": "Z4",
+  "precio": 6713
+}, {
+  "marca": "Cadillac",
+  "modelo": "Escalade ESV",
+  "precio": 12382
+}, {
+  "marca": "Lincoln",
+  "modelo": "Navigator L",
+  "precio": 10098
+}, {
+  "marca": "Chrysler",
+  "modelo": "Concorde",
+  "precio": 10853
+}, {
+  "marca": "Acura",
+  "modelo": "SLX",
+  "precio": 17662
+}, {
+  "marca": "Dodge",
+  "modelo": "Caravan",
+  "precio": 10775
+}, {
+  "marca": "Volvo",
+  "modelo": "C70",
+  "precio": 12617
+}, {
+  "marca": "Honda",
+  "modelo": "S2000",
+  "precio": 15163
+}, {
+  "marca": "Toyota",
+  "modelo": "Celica",
+  "precio": 17799
+}, {
+  "marca": "Toyota",
+  "modelo": "Camry Hybrid",
+  "precio": 8153
+}, {
+  "marca": "Ford",
+  "modelo": "Mustang",
+  "precio": 17312
+}, {
+  "marca": "Jaguar",
+  "modelo": "XK Series",
+  "precio": 14453
+}, {
+  "marca": "BMW",
+  "modelo": "X3",
+  "precio": 6866
+}, {
+  "marca": "GMC",
+  "modelo": "Savana 1500",
+  "precio": 6987
+}, {
+  "marca": "Mazda",
+  "modelo": "929",
+  "precio": 5207
+}, {
+  "marca": "Dodge",
+  "modelo": "Spirit",
+  "precio": 10559
+}, {
+  "marca": "Subaru",
+  "modelo": "BRZ",
+  "precio": 16107
+}, {
+  "marca": "Nissan",
+  "modelo": "Altima",
+  "precio": 16359
+}, {
+  "marca": "Volkswagen",
+  "modelo": "Fox",
+  "precio": 13203
+}, {
+  "marca": "Toyota",
+  "modelo": "MR2",
+  "precio": 16394
+}, {
+  "marca": "Ford",
+  "modelo": "Fusion",
+  "precio": 8668
+}, {
+  "marca": "Nissan",
+  "modelo": "Altima",
+  "precio": 13910
+}, {
+  "marca": "Volvo",
+  "modelo": "C70",
+  "precio": 15490
+}, {
+  "marca": "Acura",
+  "modelo": "TL",
+  "precio": 8117
+}, {
+  "marca": "Lexus",
+  "modelo": "GS",
+  "precio": 5095
+}, {
+  "marca": "Chrysler",
+  "modelo": "Concorde",
+  "precio": 12124
+}, {
+  "marca": "BMW",
+  "modelo": "7 Series",
+  "precio": 5455
+}, {
+  "marca": "Mercury",
+  "modelo": "Cougar",
+  "precio": 8322
+}, {
+  "marca": "Isuzu",
+  "modelo": "i-Series",
+  "precio": 7598
+}, {
+  "marca": "Mercedes-Benz",
+  "modelo": "S-Class",
+  "precio": 6295
+}, {
+  "marca": "Dodge",
+  "modelo": "Ram 3500",
+  "precio": 9251
+}, {
+  "marca": "Mazda",
+  "modelo": "Mazda3",
+  "precio": 15852
+}, {
+  "marca": "Subaru",
+  "modelo": "Loyale",
+  "precio": 10603
+}, {
+  "marca": "Saturn",
+  "modelo": "VUE",
+  "precio": 11104
+}, {
+  "marca": "Plymouth",
+  "modelo": "Voyager",
+  "precio": 14042
+}, {
+  "marca": "Mitsubishi",
+  "modelo": "Pajero",
+  "precio": 12749
+}, {
+  "marca": "GMC",
+  "modelo": "Sierra 1500",
+  "precio": 15853
+}, {
+  "marca": "Pontiac",
+  "modelo": "Sunbird",
+  "precio": 16307
+}, {
+  "marca": "Pontiac",
+  "modelo": "6000",
+  "precio": 13662
+}, {
+  "marca": "Porsche",
+  "modelo": "928",
+  "precio": 6040
+}, {
+  "marca": "Dodge",
+  "modelo": "Ram Van B250",
+  "precio": 15459
+}, {
+  "marca": "Ford",
+  "modelo": "Expedition",
+  "precio": 10932
+}, {
+  "marca": "Volvo",
+  "modelo": "S80",
+  "precio": 11804
+}, {
+  "marca": "Mazda",
+  "modelo": "Mazda6",
+  "precio": 10818
+}, {
+  "marca": "Audi",
+  "modelo": "5000CS",
+  "precio": 5102
+}]

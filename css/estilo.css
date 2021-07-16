@@ -29,6 +29,10 @@ header {
           font-family: 'Roboto Slab';
           color: #eceaea;
           font-size: 17px; }
+      header .menu .lista__item:hover {
+        transform: scale(1.3); }
+        header .menu .lista__item:hover a {
+          color: #b6b2b2; }
   header .logo {
     grid-area: logo;
     display: flex;
@@ -137,8 +141,8 @@ footer {
     color: #2c2769;
     margin-bottom: 5%;
     font-size: 45px;
-    font-weight: 600;
-    text-align: justify; }
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 #values {
   color: red;

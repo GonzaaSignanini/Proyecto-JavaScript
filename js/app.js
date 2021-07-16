@@ -1,20 +1,17 @@
 
 
-class Seguro {
+let seguroAutos = [];
 
-    constructor(marca, modelo, precio) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.precio = precio;
-    }
-}
+$.ajax({
+    url: "js/autos.json",
+    method: "GET",
+    dataType: "JSON",
+    success: function(result){
+        seguroAutos = result;
+    },
+});
 
-const seguro1 = new Seguro("Peugeot", "208", 11500);
-const seguro2 = new Seguro("Volkswagen", "Gol Trend", 8000);
-const seguro3 = new Seguro("Chevrolet", "Cruze", 13000);
-const seguro4 = new Seguro("Ford", "Focus", 12300);
 
-const seguroAutos = [seguro1, seguro2, seguro3, seguro4];
 const marcaAuto = document.querySelector('.marca-auto');
 const modeloAuto = document.querySelector('.modelo-auto');
 const botonCotizador = document.querySelector('button.btn-cotizador');
@@ -88,6 +85,16 @@ function clickSubmit(e){
         inputMsj.value = "*La casilla de mensaje debe contener algo"
         inputMsj.setAttribute('id', 'values')
     }
-            
+};
 
-}
+
+$('.cotizador').css('display', 'none');
+$('.cotizador').fadeIn(1700);
+
+$('.logo').animate({
+    'margin-left': 320
+}, 2000, () =>{
+    $('.logo').animate({
+        'margin-left': 13.33
+    }, 4000)
+});
