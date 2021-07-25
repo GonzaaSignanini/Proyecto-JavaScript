@@ -198,3 +198,6 @@ footer {
     text-align: center; }
   .cotizador .seguro {
     width: 100%; }
+
+select {
+  height: 38px; }

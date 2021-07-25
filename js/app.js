@@ -8,9 +8,35 @@ $.ajax({
     dataType: "JSON",
     success: function(result){
         seguroAutos = result;
+          
+
+        seguroAutos.sort(function (a, b){
+            if ( a.marca < b.marca )
+              return -1;
+            if ( a.marca > b.marca )
+            return 1;
+            return 0;
+        })
+
+        seguroAutos.forEach(autos => {
+
+            const option = document.createElement('option');
+            option.textContent = `${autos.marca}`;
+        
+            const optionDos = document.createElement('option');
+            optionDos.textContent = `${autos.modelo}`;
+        
+            
+            selectUno.appendChild(option);
+            selectDos.appendChild(optionDos);
+        });
     },
 });
 
+
+
+
+ 
 
 const marcaAuto = document.querySelector('.marca-auto');
 const modeloAuto = document.querySelector('.modelo-auto');
@@ -89,12 +115,25 @@ function clickSubmit(e){
 
 
 $('.cotizador').css('display', 'none');
-$('.cotizador').fadeIn(1700);
+$('.cotizador').fadeIn(1000);
 
 $('.logo').animate({
     'margin-left': 320
 }, 2000, () =>{
     $('.logo').animate({
         'margin-left': 13.33
-    }, 4000)
+    }, 3000)
 });
+
+
+// for (let i = 0; i < seguroAutos.length; i++) {
+//     const selectUno = document.querySelector('select.marca-auto');
+//     const option = document.createElement('option');
+//     option.textContent = seguroAutos[i].marca;
+    
+//     selectUno.appendChild(option);
+// }
+
+const selectUno = document.querySelector('select.marca-auto');
+const selectDos = document.querySelector('select.modelo-auto');
+
