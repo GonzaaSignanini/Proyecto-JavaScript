@@ -7,55 +7,69 @@ $.ajax({
     method: "GET",
     dataType: "JSON",
     success: function(result){
-        seguroAutos = result;
-          
-
+        seguroAutos = result;  
+        
         seguroAutos.sort(function (a, b){
             if ( a.marca < b.marca )
               return -1;
             if ( a.marca > b.marca )
             return 1;
             return 0;
-        })
+        });
 
         seguroAutos.forEach(autos => {
+            selectMarca.innerHTML += ` <option class="select-modelo" value="${autos.marca}">${autos.marca}</option>`;
 
-            const option = document.createElement('option');
-            option.textContent = `${autos.marca}`;
-        
-            const optionDos = document.createElement('option');
-            optionDos.textContent = `${autos.modelo}`;
-        
-            
-            selectUno.appendChild(option);
-            selectDos.appendChild(optionDos);
+            // autos.modelos.forEach(modelo => {
+                // selectModelo.innerHTML += ` <option class="select-modelo" value="${modelo.modelo}">${modelo.modelo}</option>`;
+            // });
         });
     },
 });
 
-
-
-
- 
-
-const marcaAuto = document.querySelector('.marca-auto');
-const modeloAuto = document.querySelector('.modelo-auto');
+const selectMarca = document.querySelector('.marca-auto');
+const selectModelo = document.querySelector('.modelo-auto');
 const botonCotizador = document.querySelector('button.btn-cotizador');
-
 $('button.btn-cotizador').on('click', clickCotizar);
+
+$('.marca-auto').on('change', clickSelect);
+
+
+
+function limpiar(){
+    while(selectModelo.options.length > 0){                
+        selectModelo.remove(0);
+        } 
+    }
+
+
+function clickSelect(e){
+    e.preventDefault()
+
+    limpiar();
+
+    const marca = seguroAutos.find( s => s.marca  === selectMarca.value);
+
+    marca.modelos.forEach(modelo => {
+        selectModelo.innerHTML += ` <option class="select-modelo" value="${modelo.modelo}">${modelo.modelo}</option>`;
+    });
+
+
+}
+
 
 let contador = 0;
 localStorage.setItem('seguroAutos', JSON.stringify(seguroAutos));
 const seguroTotal = JSON.parse(localStorage.getItem('seguroAutos'));
 
-
-
 function clickCotizar(e) {
     e.preventDefault();
 
-    const autoSeleccionado = seguroAutos.find( s => s.marca.toLowerCase() == marcaAuto.value.toLowerCase() && s.modelo.toLowerCase() === modeloAuto.value.toLowerCase());
-    
-    if (autoSeleccionado == undefined){
+    const marca = seguroAutos.find( s => s.marca  === selectMarca.value);
+
+    const modelo = marca.modelos.find(m => m.modelo === selectModelo.value);
+     
+    if (marca && modelo == undefined){
         const parrafoDos = document.createElement('p');
         parrafoDos.textContent = ('No podemos asegurar tu auto.'); 
         const cotizador = document.querySelector('.cotizador');
@@ -63,7 +77,7 @@ function clickCotizar(e) {
     }else{
         const parrafo = document.createElement('p');
         parrafo.setAttribute('class', 'seguro');
-        parrafo.textContent = (`El seguro de tu vehículo ${autoSeleccionado.marca} ${autoSeleccionado.modelo} cuesta $${autoSeleccionado.precio} por mes.`);
+        parrafo.textContent = (`El seguro de tu vehículo ${marca.marca} ${modelo.modelo} cuesta $${modelo.precio} por mes.`);
         const cotizador = document.querySelector('.cotizador');
         cotizador.insertBefore(parrafo, document.querySelector('cotizador h1'));
     }
@@ -73,8 +87,7 @@ function clickCotizar(e) {
     }
     contador++;
 
-}
-
+};
 
 const inputNombre = document.querySelector('#nombre');
 const inputApellido = document.querySelector('#apellido');
@@ -126,14 +139,35 @@ $('.logo').animate({
 });
 
 
-// for (let i = 0; i < seguroAutos.length; i++) {
-//     const selectUno = document.querySelector('select.marca-auto');
-//     const option = document.createElement('option');
-//     option.textContent = seguroAutos[i].marca;
-    
-//     selectUno.appendChild(option);
-// }
+let timer = 4000;
 
-const selectUno = document.querySelector('select.marca-auto');
-const selectDos = document.querySelector('select.modelo-auto');
+let i = 0;
+let max = $('#c > li').length;
+ 
+$("#c > li").eq(i).addClass('active').css('left','0');
+$("#c > li").eq(i + 1).addClass('active').css('left','25%');
+$("#c > li").eq(i + 2).addClass('active').css('left','50%');
+$("#c > li").eq(i + 3).addClass('active').css('left','75%');
+ 
+setInterval(function(){ 
 
+	$("#c > li").removeClass('active');
+
+	$("#c > li").eq(i).css('transition-delay','0.25s');
+	$("#c > li").eq(i + 1).css('transition-delay','0.5s');
+	$("#c > li").eq(i + 2).css('transition-delay','0.75s');
+	$("#c > li").eq(i + 3).css('transition-delay','1s');
+
+	if (i < max-4) {
+		i = i+4; 
+	}else { 
+		i = 0; 
+	}  
+
+	$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+	$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+	$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+	$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+	
+}, timer);
+ 

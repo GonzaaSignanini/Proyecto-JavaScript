@@ -63,26 +63,95 @@ header {
   #nosotros .titNosotros {
     text-align: center;
     color: #191547;
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 3%; }
   #nosotros .textoNos {
     padding: 15px;
-    color: black; }
+    color: black;
+    font-size: 18px; }
   #nosotros .subtNosotros {
     text-align: center;
     color: #161341;
     font-size: 22px; }
 
 footer {
-  display: flex;
-  justify-content: center;
-  height: 15vh;
-  background-color: blue; }
+  height: 250px;
+  background: #dad8d8; }
+  footer .menuFoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 140px; }
+    footer .menuFoot li {
+      list-style: none;
+      margin-top: 1%;
+      padding: 1%; }
+      footer .menuFoot li a {
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        scroll-behavior: smooth; }
+        footer .menuFoot li a .barra {
+          margin-left: 31px; }
+      footer .menuFoot li a:hover {
+        color: #9e9898; }
+  footer .icons {
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    flex-wrap: wrap;
+    margin-top: -1%; }
+    footer .icons i {
+      font-size: 40px;
+      color: #161341;
+      padding: 8px; }
+    footer .icons .textoFooter {
+      width: 100%;
+      text-align: center;
+      align-self: flex-end;
+      margin-top: 2%; }
 
 .contenido-referencias {
   border-top: 1px #161341 solid;
-  height: 350px;
-  background-color: #b4b2af; }
+  height: 400px; }
+  .contenido-referencias .titRef {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #201c5c;
+    font-size: 45px;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 1%; }
+  .contenido-referencias #c {
+    position: relative;
+    top: 80%;
+    width: 800px;
+    height: 200px;
+    left: 50%;
+    margin-left: -400px; }
+    .contenido-referencias #c .nombres {
+      font-weight: bold; }
+  .contenido-referencias ul > li {
+    width: 25%;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    height: 200px;
+    opacity: 0;
+    padding-top: 40px;
+    text-align: center;
+    transition: 1s opacity; }
+  .contenido-referencias .active {
+    opacity: 1; }
+  .contenido-referencias p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #646566;
+    line-height: 1.5em;
+    margin-top: 1rem; }
 
 .contacto {
   border-top: 1px #161341 solid;
@@ -140,6 +209,7 @@ footer {
     width: 100%;
     color: #2c2769;
     margin-bottom: 5%;
+    margin-left: -1%;
     font-size: 45px;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
@@ -147,28 +217,6 @@ footer {
 #values {
   color: red;
   font-style: italic; }
-
-.inputs label {
-  color: white;
-  font-weight: 700; }
-
-.inputs input {
-  height: 38px; }
-
-.inputs ::placeholder {
-  text-align: center; }
-
-.inputDos {
-  margin-left: 1%; }
-  .inputDos label {
-    color: white;
-    font-weight: 700; }
-  .inputDos input {
-    height: 38px; }
-  .inputDos button {
-    margin-bottom: 1.2%; }
-  .inputDos ::placeholder {
-    text-align: center; }
 
 .cotizador {
   height: 600px;
@@ -180,6 +228,8 @@ footer {
   flex-wrap: wrap;
   filter: brightness(75%);
   padding-top: 4%; }
+  .cotizador select {
+    height: 38px; }
   .cotizador .titCotizador {
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -198,6 +248,16 @@ footer {
     text-align: center; }
   .cotizador .seguro {
     width: 100%; }
-
-select {
-  height: 38px; }
+  .cotizador .btn-cotizador {
+    margin-left: 10px; }
+  .cotizador .modelo-auto {
+    margin-left: 4px;
+    width: auto; }
+    .cotizador .modelo-auto option {
+      background-color: white;
+      color: black; }
+  .cotizador .marca-auto {
+    width: auto; }
+    .cotizador .marca-auto option {
+      background-color: white;
+      color: black; }

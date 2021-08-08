@@ -92,13 +92,14 @@ header {
     .titNosotros{
         text-align: center;
         color: rgb(25, 21, 71);
-        font-size: 30px;
+        font-size: 35px;
         padding-top: 3%;
     }
 
     .textoNos{
         padding: 15px;
         color: black;
+        font-size: 18px;
     }
 
     .subtNosotros{
@@ -109,17 +110,117 @@ header {
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    height: 15vh;
-    background-color: blue;
+    height: 250px;
+    background: rgb(218, 216, 216);
+
+    .menuFoot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+    
+        li{
+            list-style: none;
+            margin-top: 1%;
+            padding: 1%;
+    
+            a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                scroll-behavior: smooth;
+
+                .barra{
+                    margin-left: 31px;
+                }
+            }
+
+            a:hover{
+                color: rgb(158, 152, 152);
+            }
+        }
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: center;
+        height: 110px;
+        flex-wrap: wrap;
+        margin-top: -1%;
+
+        i{
+            font-size: 40px;
+            color: rgb(22, 19, 65);
+            padding: 8px;
+        }
+
+        .textoFooter{
+            width: 100%;
+            text-align: center;
+            align-self: flex-end;
+            margin-top: 2%;
+        }
+    }
+    
 }
 
 .contenido-referencias{
     border-top: 1px rgb(22, 19, 65) solid;
-    height: 350px;
-    background-color: rgb(180, 178, 175);
+    height: 400px;
+
+    .titRef{
+        text-align: justify;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(32, 28, 92);
+        font-size: 45px;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+
+    #c {
+        position: relative;
+        top: 80%;
+        width: 800px;
+        height: 200px; 
+        left: 50%;
+        margin-left: -400px;
+
+        .nombres{
+            font-weight: bold;
+        }
+    }
+    
+    ul > li {
+        width: 25%;
+        list-style-type: none;
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        height: 200px; 
+        opacity: 0;
+        padding-top: 40px;
+        text-align: center;
+        transition: 1s opacity; 
+    }
+    
+    .active {
+        opacity: 1;
+    }
+    
+    p {
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #646566;
+        line-height: 1.5em;
+        margin-top: 1rem;
+    }   
 }
+
+
+
 
 .contacto{
     border-top: 1px rgb(22, 19, 65) solid;
@@ -198,6 +299,7 @@ footer{
         width: 100%;
         color: rgb(44, 39, 105);
         margin-bottom: 5%;
+        margin-left: -1%;
         font-size: 45px;
         text-align: justify;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -211,44 +313,6 @@ footer{
     font-style: italic;
 }
 
-.inputs{
-
-    label{
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-    }
-
-    input{
-        height: 38px;
-    }
-
-    ::placeholder{
-        text-align: center;
-    }
-}
-    
-
-
-.inputDos{
-    margin-left: 1%;
-    
-    label{
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-    }
-
-    input{
-        height: 38px;
-    }
-
-    button{
-        margin-bottom: 1.2%;
-    }
-
-    ::placeholder{
-        text-align: center;
-    }
-}
 
 .cotizador{
     height: 600px;
@@ -260,6 +324,10 @@ footer{
     flex-wrap: wrap;
     filter: brightness(75%);
     padding-top: 4%;
+
+    select{
+        height: 38px;
+    }
 
 
     .titCotizador{
@@ -286,9 +354,30 @@ footer{
         width: 100%;
     }
 
+    .btn-cotizador{
+        margin-left: 10px;
+    }
+
+    .modelo-auto{
+        margin-left: 4px;
+        width: auto;
+
+        option{
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .marca-auto{
+        width: auto;
+        
+        option{
+            background-color: white;
+            color: black;
+        }
+    }
     
 }
 
-select{
-    height: 38px;
-}
+
+

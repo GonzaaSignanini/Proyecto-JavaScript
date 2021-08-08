@@ -40,16 +40,17 @@
     <div class="cotizador" id="cotizador">
         <h1 class="titCotizador">TU SEGURO DE CONFIANZA</h1>
 
-        <select name="autos" class="marca-auto">
+        <select name="autos" class="marca-auto form-select" aria-label="Default select example">
+            <option selected>Seleccioná una marca</option>
         </select>
 
-        <select name="autos" class="modelo-auto">
+        <select name="autos" class="modelo-auto form-select" aria-label="Default select example">
         </select>
 
         <div class="inputDos">
-            <button type="submit" class="btn btn-danger btn-cotizador">COTIZAR</button>
+            <button type="submit" class="btn btn-dark btn-cotizador">COTIZAR</button>
             
-            <a href="index.html"><button type="submit" class="btn-reset btn btn-danger">VOLVER A COTIZAR</button></a>
+            <a href="index.html"><button type="submit" class="btn-reset btn btn-dark">VOLVER A COTIZAR</button></a>
 
         </div>
     </div>
@@ -57,20 +58,35 @@
     <section class="contenido-nosotros">
         <div id="nosotros">
             <h1 class="titNosotros">Sobre Nosotros</h1>
-            <p class="textoNos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eligendi aut exercitationem velit! Ullam aspernatur suscipit nihil fuga impedit totam, voluptatibus numquam minima at id. Iste consequuntur facilis voluptatem repellendus.</p>
+            <p class="textoNos">Somos una Consultora en Seguros, que cuenta con profesionales con más de 30 años de experiencia en materia del seguro, brindando así la mejor atención y asesoramiento.</p>
 
             <h3 class="subtNosotros">¿Quienes Somos?</h3>
-            <p class="textoNos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero ipsum nemo. Voluptatem odio voluptatibus excepturi, illo tempora, voluptate similique tempore corporis saepe maxime id deleniti quasi quo cupiditate! Laudantium.</p>
+            <p class="textoNos">Nos caracterizamos por ser una opción profesional, eficiente y seria que tiene como objetivo brindarle a sus familiares o seres queridos la atención necesaria y cobertura garantizada.</p>
             
             <h3 class="subtNosotros">Misión y Visión</h3>
-            <p class="textoNos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo similique eum non, autem eaque tempora reprehenderit quibusdam eligendi iure corporis ab architecto natus fugit sequi est? Laboriosam, facilis. Veniam?</p>
+            <p class="textoNos">Generar servicios sociales integrales, como valor agregado a la sociedad, favoreciendo la calidad de vida de la comunidad a través del cuidado de las personas.</p>
         </div>
     </section>
 
-    <section class="contenido-referencias">
+    
 
+    <section class="contenido-referencias">
+        <h1 class="titRef">Referencias</h1>
         <div id="referencias">
-            <!-- EN ESTA SECCION VOY A PONER UN CARROUSEL CON "TESTIMONIOS" DE LAS PERSONAS QUE COTICEN SU SEGURO ACA -->
+            <ul id="c"> 
+		
+                <li><img src="imagenes/hombre.gif" alt=""><p>Muy buena pagina para cotizar! Se agradece. <span class="nombres"> Germán.</span></p></li>
+
+                <li><img src="imagenes/mujer.gif" alt=""><p>Buenas noches, ya me llegó la póliza, muchas gracias por la atención de todos.<span class="nombres"> Lucía.</span></p></li>
+                
+                <li><img src="imagenes/mujer2.gif" alt=""><p>Ya me llegó la póliza, super rapido, muy buena página! <span class="nombres"> Mariela.</span></p></li>
+
+                <li><img src="imagenes/hombre.gif" alt=""><p>Súper conforme con la rapidez con la que trabajan, gracias. <span class="nombres"> Facundo.</span></p></li>
+
+                <li><img src="imagenes/mujer2.gif" alt=""><p>Muy comodo para cotizar y llegó rapido. Recomiendo. <span class="nombres"> Rocío.</span></p></li>
+
+                <li><img src="imagenes/mujer.gif" alt=""><p>Página muy comoda y fácil para cotizar el seguro de mi auto. <span class="nombres"> Malena.</span></p></li>
+            </ul>
         </div>
 
     </section>
@@ -95,8 +111,27 @@
 
 
     <footer>
-        <p class="textoFooter">Powered by Gonzalo Signanini</p>
+        <div class="menuFoot">
+            <li class="lista__item">
+                <a href="#cotizador">Cotizar <span class="barra">|</span></a>
+            </li>
+            <li class="lista__item">
+                <a href="#nosotros">Sobre Nosotros <span class="barra">|</span></a>
+            </li>
+            <li class="lista__item">
+                <a href="#referencias">Referencias <span class="barra">|</span></a>
+            </li>
+            <li class="lista__item">
+                <a href="#contacto">Contacto <span class="barra">|</span></a>
+            </li>
+        </div>
 
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/gonzalo-signanini-a158961b8/"><i class="fab fa-linkedin"></i></a>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <p class="textoFooter">All Rights Reserved © 2021. Gonzalo Signanini</p>
+        </div>
     </footer>
 
 
@@ -107,5 +142,6 @@
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e17da4ea59.js" crossorigin="anonymous"></script>
 </body>
 </html>
